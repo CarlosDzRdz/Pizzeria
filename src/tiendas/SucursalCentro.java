@@ -5,8 +5,7 @@ import enums.Menu;
 import factory.Sucursales;
 import pizzas.*;
 
-
-public class SucursalTecnologico extends Sucursales {
+public class SucursalCentro extends Sucursales {
     @Override
     public Pizza creaPizza(Menu type) {
         Pizza pizza = null;

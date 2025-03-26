@@ -1,37 +1,33 @@
 package factory;
 
-import ingredientes.Ingredientes;
-
 import java.util.ArrayList;
 
-import enums.Menu;
-
-public abstract class Pizza extends Ingredientes {
-    String name;
-    String dough;
-    String sauce;
-    ArrayList<String> toppings = new ArrayList<String>();
+public abstract class Pizza {
+    protected String name;
+    protected String dough;
+    protected String sauce;
+    protected ArrayList<String> toppings = new ArrayList<String>();
 
     void prepara() {
-        System.out.println("Preparando                " + name);
-        System.out.println("Amazando               ...");
-        System.out.println("Aagregando salsa       ...");
-        System.out.println("Ingredientes adicionales: ");
+        System.out.println("Preparando " + name);
+        System.out.println("Amasando...");
+        System.out.println("Agregando salsa...");
+        System.out.println("Ingredientes adicionales:");
         for (String topping : toppings) {
             System.out.println("   " + topping);
         }
     }
 
     void hornea() {
-        System.out.println("Hornear por 25 minutes a 350");
+        System.out.println("Horneando por 25 minutos a 350 grados.");
     }
 
     void corta() {
-        System.out.println("Cortar la pizza  en diagonal");
+        System.out.println("Cortando la pizza en diagonal.");
     }
 
     void embalar() {
-        System.out.println("Enpaquetando la pizza en su recipiente");
+        System.out.println("Empacando la pizza en su recipiente.");
     }
 
     public String getName() {
@@ -39,7 +35,7 @@ public abstract class Pizza extends Ingredientes {
     }
 
     public String toString() {
-        StringBuffer display = new StringBuffer();
+        StringBuilder display = new StringBuilder();
         display.append("---- " + name + " ----\n");
         display.append(dough + "\n");
         display.append(sauce + "\n");
@@ -50,3 +46,4 @@ public abstract class Pizza extends Ingredientes {
     }
 
 }
+

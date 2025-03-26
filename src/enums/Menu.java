@@ -1,5 +1,10 @@
 package enums;
 
 public enum Menu {
-    AnchoasPizza, Apenino, Bari, CamaronesPizza, Chioggia, Ciccia;
+    ANCHOAS_PIZZA,
+    APENINO_PIZZA,
+    BARI_PIZZA,
+    CAMARONES_PIZZA,
+    CHIOGGIA_PIZZA,
+    CICCIA_PIZZA;
 }
